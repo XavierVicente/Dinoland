@@ -1,0 +1,20 @@
+<template name="navbarHome">
+	
+ <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="{{pathFor 'HomeLogin'}}" role="button" id="home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+
+		    {{#if currentUser}}    
+		        <li><a href="{{pathFor 'game'}}" role="button" id="juego"><span class="glyphicon glyphicon-off"></span>&nbsp;Juego <span class="sr-only">(current)</span></a></li>
+		    {{/if}}
+		        <li><a href="{{pathFor 'proyecto'}}" role="button" id="proyecto"><span class="glyphicon glyphicon-th"></span>&nbsp;El proyecto</a></li>      
+		        <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;Comunidad</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;Asistencia</a></li> 
+		        <li><a href="#">Contacto</a></li>
+		      </ul>				
+				
+		    </div><!-- /.navbar-collapse -->
+
+</template>
